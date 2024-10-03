@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PINKWRAP</title>
+  <link rel="stylesheet" href="pinkwrap.css">
+  <link rel="icon" href="https://i.ibb.co/nbfkmrj/430971166-1197288544962753-480036956876474568-n.jpg" sizes="32x32" type="image/jpg">
+  <script defer src="pinkwrap.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section with Parallax -->
+  <div id="home">
+    <h1 class="title">See your Future with <span class="pinkwrap-wordd">PINKWRAP</span></h1>
+    <p><div class="wrapper">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div></p>
+    <p class="subtitle">Where Fashion Meets Function</p>
+  </div>
+
+  <!-- Glasses Collection with Picture and Details -->
+  <section id="collection">
+    <h2>Explore Our Collection</h2>
+    <article class="glasses-item">
+      <picture>
+        <source srcset="https://i.ibb.co/y5VK7Lw/458290890-17979617258733985-6938677029654661329-n.jpg" type="image/jpg" class="image1">
+        <img src="https://i.ibb.co/Jsff6sP/457670361-17979084164733985-8180489601939058167-n.jpg" type="image/jpg" alt="Modern Stylish Glasses" class="image2">
+      </picture>
+
+      <picture></picture>
+        <source srcset="https://i.ibb.co/Jsff6sP/457670361-17979084164733985-8180489601939058167-n.jpg" type="image/jpg" class="image1">
+        <img src="https://i.ibb.co/Jsff6sP/457670361-17979084164733985-8180489601939058167-n.jpg" type="image/jpg" alt="Modern Stylish Glasses" class="image2">
+      </picture>
+      <div class="glasses-info">
+        <h3>Retro Square</h3>
+        <p>Combining style with modern vision care technology.</p>
+        <button class="shop-now-button" id="shopnow">Shop Now</button>
+      </div>
+    </article>
+    <!-- Repeat for more glasses items -->
+  </section>
+
+  <!-- Interactive Canvas for Fun -->
+  <section id="interactive">
+    <h4>Try Virtual Glasses</h4>
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <canvas id="glassesCanvas" width="640" height="480"></canvas>
+    <p>Try on virtual glasses and find your perfect fit!</p>
+    <button id="startWebcam">Start Virtual Try-On</button>
+  </section>
+
+  <!-- About Us Section with SVG -->
+  <section id="about">
+    <h2>About PINKWRAP</h2>
+    <p>At PINKWRAP, we combine state-of-the-art medical technology with stylish designs to give you the best of both worlds. <br>
+      Our mission is simple: Enhance your vision while keeping you stylish and trendy.</p>
+    <img src="https://i.ibb.co/nbfkmrj/430971166-1197288544962753-480036956876474568-n.jpg" alt="PINKWRAP Logo" class="logo">
+    <p><div class="wrapper2">
+        <div class="static-text">Call or WhatsApp</div>
+        <ul class="dynamic-texts">
+            <li><span>0274974825</span></li>
+            <li><span>0592157692</span></li>
+        </ul>
+    </div></p>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact">
+    <h4>Get In Touch</h4>
+    <form id="contactForm" action="https://formspree.io/f/xlderelr" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" id="wordLimitInput"></textarea>
+      <p id="wordCountMessage"></p>
+      <button type="submit" class="send-button">Send Message</button>
+    </form>
+  </footer>
+</body>
+</html>
